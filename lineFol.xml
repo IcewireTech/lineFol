@@ -1,12 +1,22 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="oled_cleardisplay" id="55" x="66" y="65">
+  <block type="variables_set" id="58" inline="true" x="63" y="33">
+    <field name="VAR">line</field>
+    <value name="VALUE">
+      <block type="sensor_line" id="65">
+        <field name="LINE">LEFT</field>
+      </block>
+    </value>
     <next>
-      <block type="oled_drawnumber" id="39" inline="true">
-        <value name="NUMBER">
-          <block type="math_number" id="46">
-            <field name="NUM">100</field>
+      <block type="oled_cleardisplay" id="55">
+        <next>
+          <block type="oled_drawnumber" id="39" inline="true">
+            <value name="NUMBER">
+              <block type="variables_get" id="70">
+                <field name="VAR">line</field>
+              </block>
+            </value>
           </block>
-        </value>
+        </next>
       </block>
     </next>
   </block>
