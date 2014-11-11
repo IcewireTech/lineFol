@@ -66,7 +66,17 @@
           </block>
         </statement>
         <statement name="ELSE">
-          <block type="movement_forward" id="172">
+          <block type="movement_setmotors" id="199" inline="true">
+            <value name="BOTHMOVLEFT">
+              <block type="math_number" id="206">
+                <field name="NUM">5</field>
+              </block>
+            </value>
+            <value name="BOTHMOVRIGHT">
+              <block type="math_number" id="207">
+                <field name="NUM">5</field>
+              </block>
+            </value>
             <next>
               <block type="robot_delay" id="174" inline="true">
                 <value name="DELAY">
