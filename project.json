@@ -1,0 +1,10 @@
+{
+    "name": "lineFol",
+    "version": "1.0.0",
+    "manifest_version": 1,
+    "project_type": "application",
+    "executable_type": "scratch",
+    "executable": "lineFol.xml",
+    "author": "IcewireTech",
+    "minimum_firmware_version": 40
+}
