@@ -1,9 +1,13 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="oled_drawnumber" id="39" inline="true" x="63" y="167">
-    <value name="NUMBER">
-      <block type="math_number" id="46">
-        <field name="NUM">100</field>
+  <block type="oled_cleardisplay" id="55" x="66" y="65">
+    <next>
+      <block type="oled_drawnumber" id="39" inline="true">
+        <value name="NUMBER">
+          <block type="math_number" id="46">
+            <field name="NUM">100</field>
+          </block>
+        </value>
       </block>
-    </value>
+    </next>
   </block>
 </xml>
